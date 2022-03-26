@@ -1,1 +1,1 @@
-# esbuild-react-starterpack
+# js-galaxy

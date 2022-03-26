@@ -2,17 +2,32 @@
   "name": "js-galaxy",
   "version": "1.0.0",
   "description": "there could be space for your ad here, but it's not for sale",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "json_stateham",
+  "license": "openSource",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/json-stateham/js-galaxy.git"
   },
-  "author": "json_stateham",
-  "license": "openSource",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
   "devDependencies": {
-    "esbuild": "^0.14.28"
+    "@testing-library/jest-dom": "^5.16.3",
+    "esbuild": "^0.14.28",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.1.3",
+    "eslint-plugin-jest-dom": "^4.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-regexp": "^1.6.0",
+    "eslint-plugin-security": "^1.4.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.1"
   }
 }

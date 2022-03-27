@@ -2,7 +2,8 @@ module.exports = {
   root: true,
   env: {
     es2021: true,
-    node: true
+    node: true,
+    browser: true
   },
   plugins: ['jest'],
   extends: ['eslint:recommended', 'plugin:jest/recommended'],

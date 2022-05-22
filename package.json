@@ -12,7 +12,7 @@
   "scripts": {
     "build": "NODE_ENV=production node esbuild.js",
     "start": "npm run build && node ./dist/index.js",
-    "dev": "nodemon server.js",
+    "dev": "nodemon index.js",
     "lint": "eslint . --ext .js",
     "prepush": "npm run lint && npm run test",
     "test": "jest",

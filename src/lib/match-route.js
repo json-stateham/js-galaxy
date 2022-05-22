@@ -1,15 +1,15 @@
 const strictRouteRegex = route => `^${route}$`;
 const scrict404Regex = '.*';
 
-const matchRoute = ({ req, res, routingMap }) => {
+const matchRoute = ({ req, res, routing }) => {
   const { url, method } = req;
 
-  const pathEqualToRoute = Object.keys(routingMap).find(path => {
+  const pathEqualToRoute = Object.keys(routing).find(path => {
     const routeRegex = path !== '*' ? strictRouteRegex(path) : scrict404Regex;
     return url.match(new RegExp(routeRegex));
   });
 
-  const equalRoute = routingMap[pathEqualToRoute];
+  const equalRoute = routing[pathEqualToRoute];
 
   if (!equalRoute[method]) {
     return equalRoute(req, res);
